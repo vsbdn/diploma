@@ -1,5 +1,5 @@
 {
-  "name": "repair-design",
+  "name": "diploma",
   "version": "1.0.0",
   "description": "Construction company site",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vsbdn/repair-design.git"
+    "url": "git+https://github.com/vsbdn/diploma.git"
   },
   "author": "Vasilii Boldurean",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vsbdn/repair-design/issues"
+    "url": "https://github.com/vsbdn/diploma/issues"
   },
-  "homepage": "https://github.com/vsbdn/repair-design#readme",
+  "homepage": "https://github.com/vsbdn/diploma#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",

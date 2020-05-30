@@ -82,9 +82,9 @@ function server() {
 }
 
 exports.server = server;
-exports.minify = series(minifyCSS, minifyHTML, php, fonts, minifyJS, minifyIMG);
-exports.minifyIMG = minifyIMG;
 exports.minifyCSS = minifyCSS;
 exports.minifyJS = minifyJS;
 exports.minifyHTML = minifyHTML;
+exports.minifyIMG = minifyIMG;
+exports.minifyAll = series(minifyCSS, minifyHTML, php, fonts, minifyJS, minifyIMG);
 
