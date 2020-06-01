@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -311,6 +312,9 @@ body {
   font-family: "Myriad Pro", sans-serif;
   font-weight: normal;
   font-style: normal; }
+
+.orange {
+  color: #ff6600; }
 
 .col-30 {
   max-width: 30%; }
@@ -807,3 +811,186 @@ body {
   align-items: center;
   bottom: 17px;
   left: 154px; }
+
+.footer {
+  color: #FFFFFF;
+  background: #222222; }
+  .footer__promo {
+    padding: 201px 0 108px 0;
+    background: #222222; }
+    .footer__promo-col {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+    .footer__promo-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; }
+    .footer__promo-description {
+      max-width: 203px;
+      margin-top: 43px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 16px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.75;
+      letter-spacing: normal;
+      text-align: left;
+      color: #FFFFFF; }
+      .footer__promo-description--info {
+        width: 250px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 13px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.85;
+        letter-spacing: normal;
+        text-align: left;
+        color: #777777; }
+    .footer__promo-icon--wrap {
+      height: 84px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 43px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #FFFFFF; }
+    .footer__promo-icon--num {
+      margin: 0 20px; }
+    .footer__promo-image {
+      margin-top: 74px; }
+    .footer__promo-title {
+      margin: 0;
+      text-align: left;
+      font-family: "Istok Web", sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      font-size: 84px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: -3.36px;
+      color: #FFFFFF; }
+      .footer__promo-title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; }
+      .footer__promo-title-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 43px; }
+        .footer__promo-title-items .first {
+          font-family: "Open Sans", sans-serif;
+          font-weight: normal;
+          font-style: normal;
+          font-size: 24px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          letter-spacing: normal;
+          color: #17bebb; }
+        .footer__promo-title-items .second {
+          font-family: "Istok Web", sans-serif;
+          font-weight: normal;
+          font-style: normal;
+          font-size: 36px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.63;
+          letter-spacing: normal;
+          color: #777777; }
+    .footer__promo-subtitle {
+      margin: 0 0 83px 0;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #FFFFFF; }
+    .footer__promo-block {
+      width: 233px;
+      height: 207px;
+      padding: 35px 45px 36px 54px; }
+
+.block-one__wrap, .block-two__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.block-one__title, .block-two__title {
+  max-width: 53px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #FFFFFF; }
+
+.block-one__icon, .block-two__icon {
+  width: 26px;
+  height: 29px; }
+
+.block-one__item, .block-two__item {
+  display: block;
+  margin: 46px 0 0 0;
+  font-family: "Istok Web", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #FFFFFF; }
+  .block-one__item:after, .block-two__item:after {
+    display: block;
+    content: '';
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.85;
+    letter-spacing: normal;
+    text-align: right;
+    color: #777777; }
+
+.block-one {
+  margin-bottom: 45px;
+  background: url("../img/promo-box-1.png") no-repeat center; }
+  .block-one__item:after {
+    content: '5 ст.'; }
+
+.block-two {
+  background: url("../img/promo-box-2.png") no-repeat center; }
+  .block-two__item:after {
+    content: '2020 г.'; }
