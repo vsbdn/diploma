@@ -10,4 +10,19 @@ $(document).ready(function () {
             prevEl: '.places__swiper-button-prev',
         },
     })
+
+    var swiperTwo = new Swiper ('.about__swiper-container', {
+        // Optional parameters
+
+        loop: true,
+        spaceBetween: 90,
+        pagination: {
+            el: '.about__swiper-pagination',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.about__swiper-button-next',
+            prevEl: '.about__swiper-button-prev',
+        },
+    })
 });

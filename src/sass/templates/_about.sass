@@ -1,0 +1,124 @@
+.about
+  padding: 198px 0 116px 0
+  background-color: #f7f4f2
+  &__container
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    max-width: 1261px
+    margin: 0 auto
+  &__swiper
+    &-container
+      max-width: 792px
+      padding: 0 54px
+      padding-bottom: 100px
+    &-slide
+      width: 100%
+    &-button
+      &-prev
+        left: 10px
+        width: 54px
+        height: 54px
+        top: 39%
+        background: url("../img/places-prev.svg")
+        outline: none
+        &:after
+          display: none
+      &-next
+        right: -9px
+        top: 39%
+        width: 54px
+        height: 54px
+        background: url("../img/places-next.svg")
+        outline: none
+        &:after
+          display: none
+  &__content
+    display: flex
+    flex-direction: column
+    padding-left: 70px
+  &__heading
+    margin: 0 0 63px 0
+    +istokBold
+    font-size: 36px
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.33
+    letter-spacing: -1.44px
+    color: $dark
+    max-width: 200px
+  &__title
+    +sansReg
+    font-size: 24px
+    font-weight: 600
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.5
+    letter-spacing: -0.6px
+    color: $dark
+    margin-bottom: 34px
+  &__subtitle
+    +sansReg
+    font-size: 16px
+    font-weight: normal
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.75
+    letter-spacing: 0.24px
+    text-align: left
+    color: #444444
+    margin-bottom: 19px
+    &-offer
+      +sansReg
+      font-size: 13px
+      line-height: 1.85
+      letter-spacing: normal
+      color: #777777
+
+
+
+.swiper-pagination
+  +sansReg
+  font-size: 13px
+  font-weight: normal
+  font-stretch: normal
+  font-style: normal
+  line-height: 1.85
+  letter-spacing: normal
+  color: #777777
+  &:before
+    content: '0'
+    +sansBold
+    font-size: 24px
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.5
+    letter-spacing: -0.96px
+    color: #222222
+  &-current
+    margin-right: 44px
+    +sansBold
+    font-size: 24px
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.5
+    letter-spacing: -0.96px
+    color: #222222
+  &-total
+    margin-left: 20px
+    &:before
+      content: '0'
+      +sansReg
+      font-size: 13px
+      font-weight: normal
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.85
+      letter-spacing: normal
+      color: #777777
+
+.about__swiper-pagination
+  display: flex
+  align-items: center
+  bottom: 17px
+  left: 154px
