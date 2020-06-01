@@ -875,6 +875,7 @@ body {
       margin-top: 74px; }
     .footer__promo-title {
       margin: 0;
+      padding-left: 20px;
       text-align: left;
       font-family: "Istok Web", sans-serif;
       font-weight: bold;
@@ -917,6 +918,7 @@ body {
           color: #777777; }
     .footer__promo-subtitle {
       margin: 0 0 83px 0;
+      padding-left: 20px;
       text-align: center;
       font-family: "Open Sans", sans-serif;
       font-weight: normal;
