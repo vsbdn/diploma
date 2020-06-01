@@ -1,0 +1,146 @@
+.places
+  max-width: 1920px
+  height: auto
+  background-color: #f7f4f2
+  padding-bottom: 198px
+
+  &__video
+    margin: auto
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 1003px
+    height: 506px
+    background:  url("../img/video-bg.png") no-repeat center
+    background-size: cover
+    z-index: 5
+    &-wrap
+      position: relative
+      margin-top: -18.6rem
+      margin-bottom: 135px
+  &__heading
+    position: absolute
+    top: 48px
+    left: 0
+  &__title
+    max-width: 360px
+    +istokBold
+    font-size: 36px
+    font-stretch: normal
+    font-style: normal
+    font-weight: bold
+    line-height: 1.33
+    letter-spacing: -1.44px
+    color: $light
+    margin-bottom: 0
+  &__subtitle
+    +sansReg
+    font-size: 13px
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.85
+    letter-spacing: normal
+    color: $grey
+  &__row
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__description
+    margin-top: 0
+    max-width: 280px
+    +sansReg
+    font-size: 24px
+    margin-bottom: 88px
+    line-height: 1.5
+    letter-spacing: 0.8px
+    &--orange
+      color: $orange
+  &__all-videos
+    display: flex
+    align-items: center
+    font-size: 16px
+    font-weight: 600
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.75
+    letter-spacing: 0.7px
+    &:after
+      content: ''
+      width: 20px
+      height: 12px
+      margin-left: 19px
+      background: url("../img/camera.svg")
+  &__swiper
+    &-container
+      max-width: 100%
+      padding: 0 54px
+      height: 100%
+    &-wrapper
+      max-width: 100%
+    &-slide
+      &:hover
+        color: $sky
+      &-image
+        &-wrap
+          margin-bottom: 26px
+          display: flex
+          justify-content: center
+          align-items: center
+          width: 306px
+          height: 172px
+          position: relative
+          z-index: 0
+          background: url("../img/swiper-video-2.jpg") no-repeat center
+          &:before
+            position: absolute
+            z-index: 1
+            content: ''
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            width: 306px
+            height: 172px
+            opacity: 0
+          &:hover:before
+            background: $sky
+            opacity: 0.7
+            z-index: 2
+          &-icon
+            cursor: pointer
+            z-index: 5
+      &-text
+        margin: 0
+        text-align: center
+        +sansReg
+        font-size: 13px
+        font-weight: normal
+        font-stretch: normal
+        font-style: normal
+        line-height: 1.85
+    &-button
+      &-prev
+        margin-right: 1px
+        width: 54px
+        height: 54px
+        top: 37%
+        background: url("../img/places-prev.svg")
+        outline: none
+        &:after
+          display: none
+      &-next
+        top: 37%
+        width: 54px
+        height: 54px
+        background: url("../img/places-next.svg")
+        outline: none
+        &:after
+          display: none
+
+.video__play-icon
+  cursor: pointer
+
+
+
+
+

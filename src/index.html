@@ -5,13 +5,180 @@
     <meta name="viewport" content="width=device-width, user-scalable=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="css/style.css">
     <title>Home page</title>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
+    <!--Styles-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  <main class="main">
+    <section class="section promo">
+      <header class="header">
 
+        <div class="header__container">
+          <div class="header__logo">
+            <div class="header__logo-img">
+              <img src="img/logo-icon.svg" alt="logo">
+            </div>
+            <!-- /.header__logo-img -->
+            <div class="header__logo-text">
+              <h1 class="header__logo-title">Ставрополье</h1>
+              <div class="span header__logo-subtitle">на ладони</div>
+            </div>
+            <!-- /.header__logo-text -->
+          </div>
+          <!-- /.header__logo -->
+          <nav class="header__nav">
+            <a href="" class="header__nav-link">Условия</a>
+            <!-- /.header__nav-link -->
+            <a href="" class="header__nav-link">Комплектация автомобиля</a>
+            <!-- /.header__nav-link -->
+            <a href="" class="header__nav-link">Договор аренды</a>
+            <!-- /.header__nav-link -->
+            <a href="" class="header__nav-link">Контакты</a>
+            <!-- /.header__nav-link -->
+          </nav>
+          <!-- /.nav -->
+        </div>
+        <!-- /.header__container -->
+      </header>
+      <div class="container">
+        <div class="promo__content">
+          <h2 class="promo__content-title">Аренда авто в Пятигорске</h2>
+          <!-- /.promo__title -->
+          <div class="promo__content-subtitle">Ставропольский край как на ладони</div>
+          <!-- /.promo__subtitle -->
+        </div>
+        <!-- /.promo -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section promo -->
+    <section class="section places">
+      <div class="container">
+        <div class="places__video-wrap">
+          <div class="places__heading">
+            <h3 class="places__title">Красоты Ставрополья</h3>
+            <p class="places__subtitle">Надежный автомобиль — залог лучших впечатлений!</p>
+          </div>
+          <div class="places__video">
+            <img src="img/video-play.svg" alt="video icon" class="video__play-icon">
+          </div>
+        </div>
+      <div class="row places__row">
+        <div class="col-30">
+          <h3 class="places__description">Интересные места Ставропольского края <span class="places__description--orange">эксклюзивно для вас!</span></h3>
+          <small class="places__all-videos">Все видео</small>
+        </div>
+        <!-- /.col -->
+        <div class="col-70">
+          <!-- Swiper -->
+          <div class="swiper-container places__swiper-container">
+            <div class="swiper-button-prev places__swiper-button-prev"></div>
+            <div class="swiper-wrapper places__swiper-wrapper">
+              <div class="swiper-slide places__swiper-slide">
+                <div class="places__swiper-slide-image-wrap">
+                  <img src="img/video-play.svg" alt="video play" class="places__swiper-slide-image-wrap-icon">
+                </div>
+                <p class="places__swiper-slide-text">Цейский заповедник близ Северной Осетии</p>
+              </div>
+              <div class="swiper-slide places__swiper-slide">
+                <div class="places__swiper-slide-image-wrap">
+                  <img src="img/video-play.svg" alt="video play" class="places__swiper-slide-image-wrap-icon">
+                </div>
+                <p class="places__swiper-slide-text">Цейский заповедник близ Северной Осетии</p>
+              </div>
+              <div class="swiper-slide places__swiper-slide">
+                <div class="places__swiper-slide-image-wrap">
+                  <img src="img/video-play.svg" alt="video play" class="places__swiper-slide-image-wrap-icon">
+                </div>
+                <p class="places__swiper-slide-text">Цейский заповедник близ Северной Осетии</p>
+              </div>
+              <div class="swiper-slide places__swiper-slide">
+                <div class="places__swiper-slide-image-wrap">
+                  <img src="img/video-play.svg" alt="video play" class="places__swiper-slide-image-wrap-icon">
+                </div>
+                <p class="places__swiper-slide-text">Цейский заповедник близ Северной Осетии</p>
+              </div>
+              <div class="swiper-slide places__swiper-slide">
+                <div class="places__swiper-slide-image-wrap">
+                  <img src="img/video-play.svg" alt="video play" class="places__swiper-slide-image-wrap-icon">
+                </div>
+                <p class="places__swiper-slide-text">Цейский заповедник близ Северной Осетии</p>
+              </div>
+              <div class="swiper-slide places__swiper-slide">
+                <div class="places__swiper-slide-image-wrap">
+                  <img src="img/video-play.svg" alt="video play" class="places__swiper-slide-image-wrap-icon">
+                </div>
+                <p class="places__swiper-slide-text">Цейский заповедник близ Северной Осетии</p>
+              </div>
+              <div class="swiper-slide places__swiper-slide">
+                <div class="places__swiper-slide-image-wrap">
+                  <img src="img/video-play.svg" alt="video play" class="places__swiper-slide-image-wrap-icon">
+                </div>
+                <p class="places__swiper-slide-text">Цейский заповедник близ Северной Осетии</p>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+
+            <div class="swiper-button-next places__swiper-button-next"></div>
+          </div>
+
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section places -->
+    <section class="section clients">
+      <div class="container">
+        <h3 class="clients__title">Впечатления клиентов</h3>
+        <p class="clients__subtitle">Ваши впечатления — наша мотивация</p>
+        <div class="clients__row">
+          <div class="clients__col">
+            <img src="img/client-avatar-1.png" alt="client" class="clients__avatar">
+            <div class="clients__text">
+              <p class="clients__name">Большаков О.В.</p>
+              <span class="clients__message">Это было что-то невообразимое!! Если бы не этот автомобиль, наше путешествие бы не состоялось!</span>
+            </div>
+          </div>
+          <div class="clients__col">
+            <img src="img/client-avatar-2.png" alt="client" class="clients__avatar">
+            <div class="clients__text">
+              <p class="clients__name">Волков Н.Б.</p>
+              <span class="clients__message">Нет слов, одни эмоции... СПАСИБО вам ребята! Отличный автомобиль, цена и ваше отношение - РЕСПЕКТ!</span>
+            </div>
+          </div>
+          <div class="clients__col">
+            <img src="img/client-avatar-3.png" alt="client" class="clients__avatar">
+            <div class="clients__text">
+              <p class="clients__name">Новиков К.Ф.</p>
+              <span class="clients__message">Чтобы кто не говорил - без авто за две недели мало что можно увидеть когда путешествуешь «дикарем».. РЕКОМЕНДУЮ!</span>
+            </div>
+          </div>
+          <div class="clients__col">
+            <img src="img/clients-avatar-4.png" alt="client" class="clients__avatar">
+            <div class="clients__text">
+              <p class="clients__name">Шубин Т.И.</p>
+              <span class="clients__message">Все супер! Дастик ни разу не подвел, а спуск по дороге жизни на этом красавце - просто на всю жизнь...</span>
+            </div>
+          </div>
+        </div>
+        <!-- /.clients__row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section clients -->
+  </main>
 
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
+
