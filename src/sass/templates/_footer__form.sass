@@ -1,4 +1,6 @@
 .footer
+  &-form
+    padding-bottom: 40rem
   &__form
     &-title
       +istokBold
@@ -75,22 +77,32 @@
 
 
 
-
 .select
   position: relative
+  margin-bottom: 45px
+  &:after
+    content: ''
+    position: absolute
+    right: 30px
+    top: 42px
+    width: 12px
+    height: 8px
+    background: url("../img/select-icon.svg") no-repeat center
   &-trigger
     display: flex
-    align-items: center
     justify-content: space-between
-    margin: 0 0 4.5rem 0
-    padding: 0 3rem 0 3.7rem
-    width: 30.6rem
-    height: 9rem
-    border-radius: 0.3rem
-    border: solid 1px #444444
+    align-items: center
+    padding: 0 40px
+    width: 306px
+    height: 90px
+    border-radius: 3px
+    border-width: 1px
+    border-style: solid
+    border-color: #444444
     background-color: #222222
-    &-text
-      +sansReg
+    color: white
+    &-days
+      +sansBold
       font-size: 24px
       font-weight: 600
       font-stretch: normal
@@ -99,62 +111,53 @@
       letter-spacing: normal
       text-align: left
       color: $light
-      &:after
-        content: '-20%'
-        margin-left: 2rem
-        +sansReg
-        font-size: 16px
-        font-weight: normal
-        font-stretch: normal
-        font-style: normal
-        line-height: 1.75
-        letter-spacing: 0.24px
-        text-align: left
-        color: #777777
+    &-discount
+      +sansReg
+      font-size: 16px
+      font-weight: normal
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.75
+      letter-spacing: 0.24px
+      text-align: left
+      color: #777777
+      margin-right: 60px
   &-list
     position: absolute
     top: 100%
     right: 0
     left: 0
     list-style: none
-    display: flex
+    display: none
     align-items: center
-    justify-content: space-between
-    margin: 0 0 4.5rem 0
-    padding: 0 3rem 0 3.7rem
-    width: 30.6rem
-    height: 9rem
-    border-radius: 0.3rem
-    border: solid 1px #444444
+    margin: 0
+    padding: 0 40px
+    border-width: 0 1px 1px
+    border-style: solid
+    border-color: #444444
+    width: 306px
+    border-radius: 0 0 3px 3px
     background-color: #222222
-    &-second
+    color: white
+    &-discount
+      margin-right: 60px
+    li
+      width: 100%
+      justify-content: space-between
       display: flex
       align-items: center
-      justify-content: space-between
-      +sansReg
-      font-size: 24px
-      font-weight: 600
-      font-stretch: normal
-      font-style: normal
-      line-height: 1.5
-      letter-spacing: normal
-      text-align: left
-      color: $light
-      &:after
-        content: '-25%'
-        margin-left: 2rem
-        +sansReg
-        font-size: 16px
-        font-weight: normal
-        font-stretch: normal
-        font-style: normal
-        line-height: 1.75
-        letter-spacing: 0.24px
-        text-align: left
-        color: #777777
+      padding: 20px 0
 
-    //&:not(:first-child)
-    //  display: none
+.active .select-list
+  display: flex
+  flex-direction: column
+
+.active .select-trigger
+  border-bottom-left-radius: 0
+  border-bottom-right-radius: 0
+
+
+
 
 
 
