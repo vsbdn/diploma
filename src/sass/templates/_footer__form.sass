@@ -1,0 +1,160 @@
+.footer
+  &__form
+    &-title
+      +istokBold
+      margin: 0
+      max-width: 19.5rem
+      font-size: 3.6rem
+      font-weight: bold
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.33
+      letter-spacing: -1.44px
+      text-align: left
+      color: $light
+    &-input
+      width: 30.6rem
+      height: 5.4rem
+      margin-bottom: 4.5rem
+      border: none
+      border-bottom: 2px solid #444444
+      background-color: transparent
+      outline: none
+      font-size: 16px
+      font-weight: normal
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.75
+      letter-spacing: 0.24px
+      text-align: left
+      color: $light
+      &::placeholder
+        +sansReg
+        font-size: 16px
+        font-weight: normal
+        font-stretch: normal
+        font-style: normal
+        line-height: 1.75
+        letter-spacing: 0.24px
+        text-align: left
+        color: $light
+    &-button
+      max-height: 5.4rem
+      display: block
+      +istokBold
+      padding: 1.3rem 11rem
+      text-transform: uppercase
+      font-size: 16px
+      font-weight: bold
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.75
+      letter-spacing: 0.64px
+      text-align: center
+      border: none
+      color: $light
+      background-color: $orange
+      margin-bottom: 2.7rem
+    &-promocode
+      +sansReg
+      display: block
+      font-size: 13px
+      font-weight: normal
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.85
+      letter-spacing: normal
+      text-align: center
+      color: #777777
+      text-decoration: none
+  &__row
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+
+
+
+
+
+.select
+  position: relative
+  &-trigger
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 0 4.5rem 0
+    padding: 0 3rem 0 3.7rem
+    width: 30.6rem
+    height: 9rem
+    border-radius: 0.3rem
+    border: solid 1px #444444
+    background-color: #222222
+    &-text
+      +sansReg
+      font-size: 24px
+      font-weight: 600
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.5
+      letter-spacing: normal
+      text-align: left
+      color: $light
+      &:after
+        content: '-20%'
+        margin-left: 2rem
+        +sansReg
+        font-size: 16px
+        font-weight: normal
+        font-stretch: normal
+        font-style: normal
+        line-height: 1.75
+        letter-spacing: 0.24px
+        text-align: left
+        color: #777777
+  &-list
+    position: absolute
+    top: 100%
+    right: 0
+    left: 0
+    list-style: none
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 0 4.5rem 0
+    padding: 0 3rem 0 3.7rem
+    width: 30.6rem
+    height: 9rem
+    border-radius: 0.3rem
+    border: solid 1px #444444
+    background-color: #222222
+    &-second
+      display: flex
+      align-items: center
+      justify-content: space-between
+      +sansReg
+      font-size: 24px
+      font-weight: 600
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.5
+      letter-spacing: normal
+      text-align: left
+      color: $light
+      &:after
+        content: '-25%'
+        margin-left: 2rem
+        +sansReg
+        font-size: 16px
+        font-weight: normal
+        font-stretch: normal
+        font-style: normal
+        line-height: 1.75
+        letter-spacing: 0.24px
+        text-align: left
+        color: #777777
+
+    //&:not(:first-child)
+    //  display: none
+
+
+

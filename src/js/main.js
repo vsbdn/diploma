@@ -25,4 +25,5 @@ $(document).ready(function () {
             prevEl: '.about__swiper-button-prev',
         },
     })
+
 });

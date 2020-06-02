@@ -1,0 +1,161 @@
+.footer
+  &__promo
+    padding: 201px 0 108px 0
+    background: $dark url("../img/promo-bg.jpg") no-repeat center / cover
+    &-col
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+    &-row
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+    &-description
+      max-width: 203px
+      margin-top: 43px
+      +sansReg
+      font-size: 16px
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.75
+      letter-spacing: normal
+      text-align: left
+      color: $light
+      &--info
+        width: 250px
+        +sansReg
+        font-size: 13px
+        font-weight: normal
+        font-stretch: normal
+        font-style: normal
+        line-height: 1.85
+        letter-spacing: normal
+        text-align: left
+        color: #777777
+    &-icon
+      &--wrap
+        height: 84px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 43px
+        +sansReg
+        font-size: 24px
+        font-weight: 600
+        font-stretch: normal
+        font-style: normal
+        line-height: 1.5
+        letter-spacing: normal
+        text-align: left
+        color: $light
+      &--num
+        margin: 0 20px
+    &-image
+      margin-top: 74px
+    &-title
+      margin: 0
+      text-align: left
+      +istokBold
+      font-size: 84px
+      font-stretch: normal
+      font-style: normal
+      line-height: 1
+      letter-spacing: -3.36px
+      color: $light
+      &-wrap
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+      &-items
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-left: 43px
+        .first
+          +sansReg
+          font-size: 24px
+          font-weight: 600
+          font-stretch: normal
+          font-style: normal
+          letter-spacing: normal
+          color: #17bebb
+        .second
+          +istokReg
+          font-size: 36px
+          font-weight: normal
+          font-stretch: normal
+          font-style: normal
+          line-height: 1.63
+          letter-spacing: normal
+          color: #777777
+    &-subtitle
+      margin: 0 0 83px 0
+      padding-left: 20px
+      text-align: center
+      +sansReg
+      font-size: 24px
+      font-weight: 500
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.5
+      letter-spacing: normal
+      color: $light
+    &-block
+      width: 233px
+      height: 207px
+      padding: 35px 45px 36px 54px
+
+
+.block-one, .block-two
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__title
+    max-width: 53px
+    +sansReg
+    font-size: 13px
+    font-weight: normal
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.85
+    letter-spacing: normal
+    text-align: left
+    color: $light
+  &__icon
+    width: 26px
+    height: 29px
+  &__item
+    display: block
+    margin: 46px 0 0 0
+    +istokBold
+    font-size: 36px
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    letter-spacing: normal
+    text-align: right
+    color: $light
+    &:after
+      display: block
+      content: ''
+      +sansReg
+      font-size: 13px
+      font-weight: normal
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.85
+      letter-spacing: normal
+      text-align: right
+      color: #777777
+.block-one
+  margin-bottom: 45px
+  background: url("../img/promo-box-1.png") no-repeat center
+  &__item
+    &:after
+      content: '5 ст.'
+.block-two
+  background: url("../img/promo-box-2.png") no-repeat center
+  &__item
+    &:after
+      content: '2020 г.'
