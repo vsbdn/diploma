@@ -1,6 +1,8 @@
 .footer
   &-form
-    padding-bottom: 40rem
+    padding-bottom: 15.7rem
+  &__col
+    flex-basis: 33%
   &__form
     &-title
       +istokBold
@@ -78,7 +80,6 @@
   &__col
     &-heading
       display: flex
-      justify-content: space-between
       align-items: flex-start
     &-title
       +istokBold
@@ -105,6 +106,7 @@
 
     &-oldprice
       +sansReg
+      margin: 0
       font-size: 24px
       font-weight: 600
       font-stretch: normal
@@ -125,7 +127,7 @@
   &:after
     content: ''
     position: absolute
-    right: 30px
+    right: 84px
     top: 42px
     width: 12px
     height: 8px

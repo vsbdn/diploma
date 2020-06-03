@@ -1,2 +1,117 @@
 .contacts
+  padding-bottom: 8rem
   background: $dark
+  height: auto
+  &__row
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &:not(:last-child)
+      margin-bottom: 10rem
+  &__col
+    flex-basis: 50%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &:last-child
+      align-self: flex-end
+    .slider
+      position: relative
+      min-width: 0
+      height: 190px
+      width: 535px
+      padding: 23.8px 50px
+      background: url("../img/footer-slider-bg.png") no-repeat center
+      &__item
+        &-title
+          +sansReg
+          margin-top: 0
+          margin-bottom: 3.1rem
+          max-width: 25.3rem
+          font-size: 16px
+          font-weight: 600
+          font-stretch: normal
+          font-style: normal
+          line-height: 1.75
+          letter-spacing: -0.5px
+          text-align: left
+          color: $light
+        &-text
+          +sansReg
+          max-width: 20rem
+          font-size: 13px
+          font-weight: normal
+          font-stretch: normal
+          font-style: normal
+          line-height: 1.85
+          letter-spacing: normal
+          text-align: left
+          color: #777777
+      .slick-arrow
+        position: absolute
+      .slick-arrow.slick-prev
+        background: url("../img/arrow-prev.svg") no-repeat center
+        font-size: 0
+        bottom: 39px
+        right: 95px
+        width: 12px
+        height: 12px
+        border: none
+        z-index: 10
+      .slick-arrow.slick-next
+        background: url("../img/arrow-next.svg") no-repeat center
+        font-size: 0
+        bottom: 39px
+        right: 56px
+        width: 12px
+        height: 12px
+        border: none
+        z-index: 10
+      .slick-active
+        outline: none
+      .slick
+        &-track
+          display: flex
+        &-list
+          overflow: hidden
+
+  &__title
+    +sansBold
+    font-size: 16px
+    font-weight: 600
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.75
+    letter-spacing: normal
+    text-align: left
+    color: $light
+  &__list
+    +sansReg
+    display: block
+    padding-left: 0
+    font-size: 13px
+    font-weight: normal
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.85
+    letter-spacing: normal
+    text-align: left
+    color: #777777
+    text-decoration: none
+
+.socials
+  display: flex
+  img
+    margin: 0 9px
+.rights
+  +sansReg
+  font-size: 13px
+  font-weight: normal
+  font-stretch: normal
+  font-style: normal
+  line-height: 1.85
+  letter-spacing: normal
+  text-align: right
+  color: #444444
+
+

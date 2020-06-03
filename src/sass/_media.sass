@@ -1,0 +1,66 @@
+
+@media screen and (max-width: 1230px)
+  .header
+    &__nav
+      &-link
+        &:not(:last-child)
+          margin-right: 2.7rem
+    &__logo
+      &-text
+        display: none
+  .places
+    &__video
+      max-width: 80.3rem
+      min-height: 40.6rem
+      &-wrap
+        margin-top: -22.6rem
+
+
+@media screen and (max-width: 992px)
+  html
+    font-size: 8px
+
+
+@media screen and (max-width: 768px)
+  .header
+    &__container
+      flex-wrap: wrap
+      justify-content: center
+    &__logo
+      justify-content: center
+      flex-basis: 100%
+      margin-bottom: 3rem
+      &-text
+        display: block
+    &__nav
+      flex-direction: column
+      text-align: center
+      &-link
+        &:not(:last-child)
+          margin: 0
+  .promo
+    &__content
+      &-title
+        max-width: 34.6rem
+        font-size: 6.4rem
+  .places
+    &__container
+      max-width: 90%
+    &__video
+      &-wrap
+        padding: 0 4rem
+    &__title
+      font-size: 3rem
+    &__subtitle
+      max-width: 20rem
+
+@media screen and (max-width: 576px)
+  .places
+    &__video
+      min-height: 30rem
+      &-wrap
+        width: 100%
+        padding: 0
+        margin-top: -15.6rem
+    &__heading
+      display: none
