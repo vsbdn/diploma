@@ -1,5 +1,5 @@
 .about
-  padding: 198px 0 116px 0
+  padding: 19.8rem 0 18rem 0
   background-color: #f7f4f2
   &__container
     display: flex
@@ -83,5 +83,47 @@
       outline: none
     .slick-active
       outline: none
+  &__col
+    position: relative
+  &__pagination
+    &-slider
+      position: absolute
+      bottom: -8rem
+      left: 10rem
+      display: flex
+      align-items: center
+    &-num
+      +sansReg
+      font-size: 24px
+      font-weight: 600
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.5
+      letter-spacing: -0.96px
+      text-align: left
+      color: #222222
+  &__total
+    &-num
+      +sansReg
+      font-size: 13px
+      font-weight: normal
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.85
+      letter-spacing: normal
+      text-align: right
+      color: #777777
+      &:first-child
+        margin-right: 1.7rem
+  &__current
+    max-width: 25px
+    min-height: 20px
+    margin-right: 4.3rem
+    .slick-track
+      display: flex
+    .slick-list
+      overflow: hidden
+
+
 
 

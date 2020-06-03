@@ -5,7 +5,15 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 2,
     });
-    $('.about__slider').slick();
+    $('.about__slider').slick({
+        asNavFor: '.about__current'
+    });
+    $('.about__current').slick({
+        slidesToShow: 1,
+        arrows: false,
+        asNavFor: '.about__slider',
+        fade: true
+    });
 
     $('.select-trigger').on('click', function () {
         $(this).parent().toggleClass('active');

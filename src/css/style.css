@@ -686,7 +686,7 @@ body {
     color: #777777; }
 
 .about {
-  padding: 198px 0 116px 0;
+  padding: 19.8rem 0 18rem 0;
   background-color: #f7f4f2; }
   .about__container {
     display: flex;
@@ -778,6 +778,48 @@ body {
       outline: none; }
     .about__slider .slick-active {
       outline: none; }
+  .about__col {
+    position: relative; }
+  .about__pagination-slider {
+    position: absolute;
+    bottom: -8rem;
+    left: 10rem;
+    display: flex;
+    align-items: center; }
+  .about__pagination-num {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -0.96px;
+    text-align: left;
+    color: #222222; }
+  .about__total-num {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.85;
+    letter-spacing: normal;
+    text-align: right;
+    color: #777777; }
+    .about__total-num:first-child {
+      margin-right: 1.7rem; }
+  .about__current {
+    max-width: 25px;
+    min-height: 20px;
+    margin-right: 4.3rem; }
+    .about__current .slick-track {
+      display: flex; }
+    .about__current .slick-list {
+      overflow: hidden; }
 
 .footer {
   color: #FFFFFF;
@@ -1295,6 +1337,9 @@ body {
   display: flex; }
   .socials img {
     margin: 0 9px; }
+
+svg:hover {
+  fill: #17bebb; }
 
 .rights {
   font-family: "Open Sans", sans-serif;

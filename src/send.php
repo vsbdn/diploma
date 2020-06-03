@@ -1,7 +1,7 @@
 <?php
 
-$userName = $_POST['discount'];
-$userPhone = $_POST['userName'];
+$userDiscount = $_POST['discount'];
+$userName = $_POST['userName'];
 
 // Load Composer's autoloader
 require 'phpmailer/PHPMailer.php';
