@@ -5,6 +5,7 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 2,
     });
+    $('.about__slider').slick();
 
     $('.select-trigger').on('click', function () {
         $(this).parent().toggleClass('active');

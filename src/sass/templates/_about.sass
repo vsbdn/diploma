@@ -4,39 +4,13 @@
   &__container
     display: flex
     justify-content: space-between
-    align-items: flex-start
+    align-items: center
     max-width: 1261px
     margin: 0 auto
-  &__swiper
-    &-container
-      max-width: 792px
-      padding: 0 54px
-      padding-bottom: 100px
-    &-slide
-      width: 100%
-    &-button
-      &-prev
-        left: 10px
-        width: 54px
-        height: 54px
-        top: 39%
-        background: url("../img/places-prev.svg")
-        outline: none
-        &:after
-          display: none
-      &-next
-        right: -9px
-        top: 39%
-        width: 54px
-        height: 54px
-        background: url("../img/places-next.svg")
-        outline: none
-        &:after
-          display: none
   &__content
     display: flex
     flex-direction: column
-    padding-left: 70px
+    max-width: 37.1rem
   &__heading
     margin: 0 0 63px 0
     +istokBold
@@ -59,6 +33,7 @@
     margin-bottom: 34px
   &__subtitle
     +sansReg
+    max-width: 309px
     font-size: 16px
     font-weight: normal
     font-stretch: normal
@@ -74,52 +49,39 @@
       line-height: 1.85
       letter-spacing: normal
       color: #777777
+  &__slider
+    position: relative
+    max-width: 70.2rem
+    min-height: 39.5rem
+    .slick-track
+      display: flex
+    .slick-list
+      overflow: hidden
+    .slick-arrow
+      position: absolute
+    .slick-arrow.slick-prev
+      background: url("../img/about-prev.svg") no-repeat center
+      font-size: 0
+      top: 50%
+      margin-top: -2.7rem
+      left: -4.3rem
+      width: 54px
+      height: 54px
+      border: none
+      z-index: 10
+      outline: none
+    .slick-arrow.slick-next
+      background: url("../img/about-next.svg") no-repeat center
+      font-size: 0
+      margin-top: -2.7rem
+      top: 50%
+      right: -43px
+      width: 54px
+      height: 54px
+      border: none
+      z-index: 10
+      outline: none
+    .slick-active
+      outline: none
 
 
-
-
-
-.about__swiper-pagination
-  display: flex
-  align-items: center
-  bottom: 17px
-  left: 154px
-  .swiper-pagination
-    +sansReg
-    font-size: 13px
-    font-weight: normal
-    font-stretch: normal
-    font-style: normal
-    line-height: 1.85
-    letter-spacing: normal
-    color: #777777
-    &:before
-      content: '0'
-      +sansBold
-      font-size: 24px
-      font-stretch: normal
-      font-style: normal
-      line-height: 1.5
-      letter-spacing: -0.96px
-      color: #222222
-    &-current
-      margin-right: 44px
-      +sansBold
-      font-size: 24px
-      font-stretch: normal
-      font-style: normal
-      line-height: 1.5
-      letter-spacing: -0.96px
-      color: #222222
-    &-total
-      margin-left: 20px
-      &:before
-        content: '0'
-        +sansReg
-        font-size: 13px
-        font-weight: normal
-        font-stretch: normal
-        font-style: normal
-        line-height: 1.85
-        letter-spacing: normal
-        color: #777777
