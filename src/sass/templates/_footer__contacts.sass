@@ -8,12 +8,59 @@
     align-items: center
     &:not(:last-child)
       margin-bottom: 10rem
+  &-wrap
+    &:last-of-type
+      margin-right: 10rem
+  &__pagination
+    &-slider
+      position: absolute
+      top: 22px
+      right: 57px
+      max-width: 12rem
+      min-width: 0
+      display: flex
+      align-items: center
+    &-num
+      +sansReg
+      font-size: 24px
+      font-weight: 600
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.5
+      letter-spacing: -0.96px
+      text-align: left
+      color: $light
+  &__total
+    display: flex
+    margin-right: 39px
+    &-num
+      +sansReg
+      font-size: 13px
+      font-weight: normal
+      font-stretch: normal
+      font-style: normal
+      line-height: 1.85
+      letter-spacing: normal
+      text-align: right
+      color: #777777
+      &:first-child
+        margin-right: 2rem
+  &__current
+    max-width: 100%
+    min-height: 20px
+    margin-right: 4.3rem
+    padding-top: 0.6rem
+    .slick-track
+      display: flex
+    .slick-list
+      overflow: hidden
   &__col
     flex-basis: 50%
     display: flex
     align-items: center
     justify-content: space-between
     &:last-child
+      position: relative
       align-self: flex-end
     .slider
       position: relative
@@ -74,7 +121,6 @@
           display: flex
         &-list
           overflow: hidden
-
   &__title
     +sansBold
     font-size: 16px
@@ -85,7 +131,7 @@
     letter-spacing: normal
     text-align: left
     color: $light
-  &__list
+  &__list, &__link
     +sansReg
     display: block
     padding-left: 0
@@ -98,14 +144,33 @@
     text-align: left
     color: #777777
     text-decoration: none
+  &__link
+    &:hover
+      color: $sky
 
-.socials
+.social
   display: flex
-  img
-    margin: 0 9px
+  &-icon
+    margin: 9px
+    width: 56px
+    height: 56px
+    &-one
+      background: url("../img/socials-1.svg") no-repeat center
+      &:hover
+        background: url("../img/socials-1-hover.svg") no-repeat center
+    &-two
+      background: url("../img/socials-2.svg") no-repeat center
+      &:hover
+        background: url("../img/socials-2-hover.svg") no-repeat center
+    &-three
+      background: url("../img/socials-3.svg") no-repeat center
+      &:hover
+        background: url("../img/socials-3-hover.svg") no-repeat center
+    &-four
+      background: url("../img/socials-4.svg") no-repeat center
+      &:hover
+        background: url("../img/socials-4-hover.svg") no-repeat center
 
-svg:hover
-  fill: $sky
 
 .rights
   +sansReg

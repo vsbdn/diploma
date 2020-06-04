@@ -1,6 +1,10 @@
 $(document).ready(function () {
 
-    $('.slider').slick();
+    $('.slider').slick({
+        infinite: true,
+        asNavFor: '.contacts__current',
+    });
+
     $('.places__slider').slick({
         infinite: true,
         slidesToShow: 2,
@@ -14,6 +18,14 @@ $(document).ready(function () {
         asNavFor: '.about__slider',
         fade: true
     });
+    $('.contacts__current').slick({
+        slidesToShow: 1,
+        arrows: false,
+        asNavFor: '.slider',
+        fade: true
+    });
+
+
 
     $('.select-trigger').on('click', function () {
         $(this).parent().toggleClass('active');
