@@ -56,6 +56,27 @@
       min-height: unset
 
 
+@media screen and (max-width: 1140px)
+  .contacts
+    &__row
+      justify-content: center
+      flex-wrap: wrap
+    &__col
+      &-one
+        order: 2
+        min-width: 70%
+      &-two
+        margin-bottom: 5rem
+      .slider
+        &__item
+          &-text
+            max-width: 30rem
+    &-wrap
+      &:last-child
+        margin-right: 0
+
+
+
 @media screen and (max-width: 992px)
   html
     font-size: 8px
@@ -175,3 +196,17 @@
       flex-basis: 100%
       &:nth-of-type(3)
         margin-bottom: 5rem
+  .contacts
+    &__col
+      &-one
+        flex-wrap: wrap
+    &-wrap
+      display: flex
+      flex-direction: column
+      align-items: center
+      flex-basis: 100%
+    .slider
+      display: none
+    &__pagination
+      &-slider
+        display: none

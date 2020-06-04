@@ -1494,6 +1494,20 @@ img {
       width: 100%;
       min-height: unset; } }
 
+@media screen and (max-width: 1140px) {
+  .contacts__row {
+    justify-content: center;
+    flex-wrap: wrap; }
+  .contacts__col-one {
+    order: 2;
+    min-width: 70%; }
+  .contacts__col-two {
+    margin-bottom: 5rem; }
+  .contacts__col .slider__item-text {
+    max-width: 30rem; }
+  .contacts-wrap:last-child {
+    margin-right: 0; } }
+
 @media screen and (max-width: 992px) {
   html {
     font-size: 8px; }
@@ -1598,4 +1612,15 @@ img {
   .clients__col {
     flex-basis: 100%; }
     .clients__col:nth-of-type(3) {
-      margin-bottom: 5rem; } }
+      margin-bottom: 5rem; }
+  .contacts__col-one {
+    flex-wrap: wrap; }
+  .contacts-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%; }
+  .contacts .slider {
+    display: none; }
+  .contacts__pagination-slider {
+    display: none; } }
