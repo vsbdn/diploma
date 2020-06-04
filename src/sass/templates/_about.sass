@@ -5,7 +5,9 @@
     display: flex
     justify-content: space-between
     align-items: center
+    flex-wrap: wrap
     max-width: 1261px
+    width: 90%
     margin: 0 auto
   &__content
     display: flex
@@ -85,6 +87,8 @@
       outline: none
   &__col
     position: relative
+    &:first-child
+      margin-right: 4rem
   &__pagination
     &-slider
       position: absolute

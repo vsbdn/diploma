@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 1230px)
+@media screen and (max-width: 1240px)
   .header
     &__nav
       &-link
@@ -20,6 +20,40 @@
       flex-basis: 100%
     &__slider
       margin-top: 4rem
+  .about
+    &__col
+      &-one
+        order: 2
+      &-two
+        order: 1
+      flex-basis: 100%
+      &:first-child
+        margin-right: 0
+    &__slider
+      margin: 0 auto 8rem
+    &__pagination-slider
+      display: none
+    &__content
+      margin: 0 8rem
+      max-width: 100%
+      align-items: center
+      text-align: center
+    &__heading
+      max-width: unset
+      margin-bottom: 2rem
+    &__subtitle
+      max-width: unset
+      text-align: center
+  .about
+    padding-top: 5rem
+    &__col
+      &_one
+        width: 100%
+      &-two
+        margin-bottom: 4rem
+    &__slider
+      width: 100%
+      min-height: unset
 
 
 @media screen and (max-width: 992px)
@@ -72,6 +106,23 @@
       max-width: 20rem
     &__row
       display: none
+  .about
+    padding-top: 5rem
+    padding-bottom: 0
+    &__col
+      &-one
+        width: 100%
+      &-two
+        margin-bottom: 4rem
+    .slick-arrow.slick-prev
+      left: 0
+    .slick-arrow.slick-next
+      right: 0
+    &__slider
+      width: 100%
+      min-height: unset
+    &__content
+      margin: 0
 
 @media screen and (max-width: 576px)
   .places
