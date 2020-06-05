@@ -62,6 +62,7 @@
     font-style: normal
     line-height: 1.75
     letter-spacing: 0.7px
+    color: $black
     &:visited
       color: $black
     &:after
@@ -69,7 +70,7 @@
       width: 20px
       height: 12px
       margin-left: 1.9rem
-      background: url("../img/camera.svg")
+      background: url("../img/camera.svg") no-repeat center
   &__slider
     max-width: 69rem
     position: relative
@@ -99,8 +100,6 @@
         height: 100%
         opacity: 0
         background: rgba($sky, 0.5) no-repeat center / cover
-      &:hover:before
-        opacity: 1
     span
       +sansReg
       font-size: 1.3rem
@@ -113,6 +112,7 @@
       color: #444444
   .slick-arrow
     position: absolute
+    cursor: pointer
   .slick-arrow.slick-prev
     background: $light url("../img/arrow-prev.svg") no-repeat center
     font-size: 0

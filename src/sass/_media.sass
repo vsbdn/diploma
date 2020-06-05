@@ -143,9 +143,12 @@
   .promo
     &__content
       &-title
-        max-width: 34.6rem
+        max-width: 33.3rem
         font-size: 6.4rem
+  .clients
+    padding-top: 5rem
   .places
+    background-color: $light
     padding-bottom: 1rem
     &__container
       max-width: 90%
@@ -197,6 +200,14 @@
 
 
 @media screen and (max-width: 576px)
+  .promo
+    &__content
+      &-title
+        font-size: 6rem
+      &-subtitle
+        font-size: 2.1rem
+  .header
+    padding: 5rem 0
   .places
     &__video
       min-height: 30rem
@@ -264,6 +275,21 @@
           color: $light
         &:hover:after
           transform: scaleX(1)
+  .places
+    &__all-videos
+      transition: all 0.2s
+      &:hover
+        color: $sky
+    .slider-item
+      .image-wrap
+        transition: all 0.2s
+        &:hover:before
+          opacity: 1
+      span
+        &:hover
+          color: $sky
+
+
   .social
     &-icon
       &-one
@@ -278,3 +304,20 @@
       &-four
         &:hover
           background: url("../img/socials-4-hover.svg") no-repeat center
+  .contacts
+    &__link
+      transition: all 0.2s
+      &:hover
+        color: $sky
+  .footer
+    &__form
+      &-button
+        transition: all 0.2s
+        &:hover
+          box-shadow: 0 5px 15px rgba($orange, 0.5)
+      &-promocode
+        transition: all 0.2s
+        &:hover
+          color: $sky
+
+
