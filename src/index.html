@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon-16x16.png">
 
-    <title>Home page</title>
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
+    <title>Аренда авто в Пятигорске</title>
     <!--Styles-->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(64653049, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/64653049" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
     <main class="main">
       <section class="section promo">
         <header class="header">
 
           <div class="header__container">
-            <div class="header__logo">
+            <a href="http://ynob.ru/diploma" class="header__logo">
               <div class="header__logo-img">
                 <img src="img/logo-icon.svg" alt="logo">
               </div>
@@ -27,17 +27,30 @@
                 <div class="span header__logo-subtitle">на ладони</div>
               </div>
               <!-- /.header__logo-text -->
-            </div>
+            </a>
             <!-- /.header__logo -->
             <nav class="header__nav">
-              <a href="" class="header__nav-link">Условия</a>
+              <a href="#conditions" class="header__nav-link">Условия</a>
               <!-- /.header__nav-link -->
-              <a href="" class="header__nav-link">Комплектация автомобиля</a>
+              <a href="#auto-promo" class="header__nav-link">Комплектация автомобиля</a>
               <!-- /.header__nav-link -->
-              <a href="" class="header__nav-link">Договор аренды</a>
+              <a href="#conditions" class="header__nav-link">Договор аренды</a>
               <!-- /.header__nav-link -->
-              <a href="" class="header__nav-link">Контакты</a>
+              <a href="#contacts" class="header__nav-link">Контакты</a>
               <!-- /.header__nav-link -->
+              <div class="hamburger">
+                <div class="menu-block">
+                  <nav class="menu-nav">
+                    <a href="#conditions">Условия</a>
+                    <a href="#auto-promo">Комплектация автомобиля</a>
+                    <a href="#conditions">Договор аренды</a>
+                    <a href="#contacts">Контакты</a>
+                  </nav>
+                  <a href="#" class="menu-btn">
+                    <span></span>
+                  </a>
+                </div>
+              </div>
             </nav>
             <!-- /.nav -->
           </div>
@@ -62,39 +75,44 @@
               <h3 class="places__title">Красоты Ставрополья</h3>
               <p class="places__subtitle">Надежный автомобиль — залог лучших впечатлений!</p>
             </div>
-            <div class="places__video">
-              <img src="img/video-play.svg" alt="video icon" class="video__play-icon">
+            <div class="places__video video" id="player">
+              <script src="https://www.youtube.com/iframe_api"></script>
+              <img src="img/video-play.svg" alt="video icon" class="video__play">
             </div>
           </div>
           <div class="places__row">
             <div class="places__col">
               <h3 class="places__description">Интересные места Ставропольского края <span class="places__description--orange">эксклюзивно для вас!</span></h3>
-              <small class="places__all-videos">Все видео</small>
+              <a href="https://www.youtube.com/results?search_query=%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BD%D1%8B%D0%B5+%D0%BC%D0%B5%D1%81%D1%82%D0%B0+%D1%81%D1%82%D0%B0%D0%B2%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D1%8F" target="_blank" class="places__all-videos">Все видео</a>
             </div>
             <!-- /.col -->
             <div class="places__col">
               <div class="places__slider">
                 <div class="slider-item">
-                  <div class="image-wrap">
-                    <img class="video__play-icon" src="img/video-play.svg" alt="video">
+                  <div class="image-wrap" id="playerOne">
+                    <script src="https://www.youtube.com/iframe_api"></script>
+                    <img class="video__play-one" src="img/video-play.svg" alt="video">
                   </div>
                   <span>Цейский заповедник близ Северной Осетии</span>
                 </div>
                 <div class="slider-item">
-                  <div class="image-wrap">
-                    <img class="video__play-icon" src="img/video-play.svg" alt="video">
+                  <div class="image-wrap" id="playerTwo">
+                    <script src="https://www.youtube.com/iframe_api"></script>
+                    <img class="video__play-two" src="img/video-play.svg" alt="video">
                   </div>
                   <span>Цейский заповедник близ Северной Осетии</span>
                 </div>
                 <div class="slider-item">
-                  <div class="image-wrap">
-                    <img class="video__play-icon" src="img/video-play.svg" alt="video">
+                  <div class="image-wrap" id="playerThree">
+                    <script src="https://www.youtube.com/iframe_api"></script>
+                    <img class="video__play-three" src="img/video-play.svg" alt="video">
                   </div>
                   <span>Цейский заповедник близ Северной Осетии</span>
                 </div>
                 <div class="slider-item">
-                  <div class="image-wrap">
-                    <img class="video__play-icon" src="img/video-play.svg" alt="video">
+                  <div class="image-wrap" id="playerFour">
+                    <script src="https://www.youtube.com/iframe_api"></script>
+                    <img class="video__play-four" src="img/video-play.svg" alt="video">
                   </div>
                   <span>Цейский заповедник близ Северной Осетии</span>
                 </div>
@@ -204,7 +222,7 @@
     <footer class="footer">
       <section class="footer__promo">
         <div class="container">
-          <h4 class="footer__promo-title promo-header">Авто</h4>
+          <h4 class="footer__promo-title promo-header" id="auto-promo">Авто</h4>
           <div class="footer__promo-row">
             <div class="footer__promo-col">
               <p class="footer__promo-subtitle">в приближении</p>
@@ -273,7 +291,7 @@
         <!-- /.container -->
       </section>
       <!-- /.footer__promo -->
-      <section class="footer-form">
+      <section class="footer-form" id="conditions">
         <div class="container">
           <div class="footer__row">
             <div class="footer__col footer__col-one">
@@ -281,7 +299,7 @@
             </div>
             <!-- /.footer__col -->
             <div class="footer__col footer__col-two">
-              <form action="send.php" method="post" id="footer__form" class="footer__form">
+              <form action="send.php" method="post" class="form footer__form">
                 <div class="select">
                   <div class="select-trigger">
                     <div class="select-trigger-days">10 Дней</div>
@@ -298,8 +316,9 @@
                     </li>
                   </ul>
                 </div>
-
-                <input name="userName" type="text" class="footer__form-input" placeholder="Ваш телефон">
+                <input class="input-days" type="hidden" name="days" value="10">
+                <input class="input-discount" type="hidden" name="discount" value="20">
+                <input type="tel" name="userPhone" class="footer__form-input">
                 <button class="footer__form-button">Заказать</button>
                 <a href="#" class="footer__form-promocode">А у меня есть промокод!</a>
               </form>
@@ -319,7 +338,7 @@
         </div>
         <!-- /.container -->
       </section>
-      <section class="footer__contacts contacts">
+      <section class="footer__contacts contacts" id="contacts">
         <div class="container">
           <div class="contacts__row">
             <div class="contacts__col contacts__col-one">
@@ -397,8 +416,17 @@
       <!-- /.footer__contacts -->
     </footer>
     <!--  </footer>-->
+    <div class="modal">
+      <div class="modal__dialog">
+        <h6 class="modal__dialog-title">Спасибо, что выбрали нашу компанию!</h6>
+        <p class="modal__dialog-subtitle">Наш менеджер перезвонит Вам в течении 15-ти минут.</p>
+        <button class="modal__dialog-button">Вернуться</button>
+      </div>
+    </div>
 
       <script src="js/jquery-3.5.1.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+      <script src="js/jquery.mask.min.js"></script>
       <script src="js/slick.min.js"></script>
       <script src="js/main.js"></script>
   </body>

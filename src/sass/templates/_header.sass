@@ -11,7 +11,7 @@
     &-img
       margin-right: 2.2rem
     &-title
-      +myriadBold
+      +istokBold
       font-size: 3.6rem
       letter-spacing: 0.3px
       color: $light
@@ -32,19 +32,84 @@
       font-size: 1.6rem
       line-height: 1.75
       letter-spacing: 0.3px
-      &:after
-        content: ''
-        display: block
-        width: 100%
-        height: 2px
-        transform: scaleX(0)
-        background-color: $light
-        transition: all 0.2s
-      &:hover
-        color: $light
-      &:hover:after
-        transform: scaleX(1)
-
-
-      &:not(:last-child)
+      &:not(:last-of-type)
         margin-right: 5.7rem
+
+.menu-btn
+  display: none
+  width: 50px
+  height: 50px
+  background-color: #f7f4f2
+  border-radius: 50%
+  position: relative
+
+
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after
+  position: absolute
+  top: 50%
+  margin-top: -1px
+  left: 50%
+  margin-left: -10px
+  width: 20px
+  height: 2px
+  background-color: #222
+
+.menu-btn span::before,
+.menu-btn span::after
+  content: ''
+  display: block
+  transition: 0.2s
+
+.menu-btn span::before
+  transform: translateY(-5px)
+
+.menu-btn span::after
+  transform: translateY(5px)
+
+
+.menu-btn_active span:before
+  transform: rotate(-45deg)
+
+.menu-btn_active span:after
+  transform: rotate(45deg)
+
+.menu-btn_active span
+  height: 0
+
+.menu-block
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+
+.menu-nav a
+  color: $dark
+  +sansReg
+  font-size: 1.6rem
+  line-height: 1.75
+  letter-spacing: 0.3px
+
+.menu-nav
+  padding: 1rem 1rem
+  position: absolute
+  top: 100%
+  display: none
+  border: 1px solid $light
+  border-radius: 5px
+  height: 20rem
+  width: 20rem
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  background: #f7f4f2
+  transition: all 0.5s
+  text-align: center
+
+.menu-nav_active
+  display: flex
+
+
+

@@ -1,12 +1,11 @@
 const {src, dest, watch, series} = require('gulp');
 const browserSync = require('browser-sync').create();
 const cleanCSS = require('gulp-clean-css');
-const rename = require("gulp-rename");
 const sass = require("gulp-sass");
-// const autoprefixer = require('gulp-autoprefixer');
 const minify = require('gulp-minify');
 const htmlmin = require('gulp-htmlmin');
 const tinypng = require('gulp-tinypng-compress');
+const autoprefixer = require('gulp-autoprefixer');
 
 function minifyCSS(done) {
       src('src/css/**.css')
@@ -51,7 +50,7 @@ function fonts(done) {
 
 function minifyIMG(done) {
     src('src/img/**/*.{png,jpg,jpeg}')
-        .pipe(tinypng({key: 'xGD0kdWbFnNHrT80FzcrlMVDKK2cwSCZ',}))
+        .pipe(tinypng({key: 'rklNQJk2T1QlbSscdMstbRp0NTxWbSKq',}))
         .pipe(dest('dist/img/'));
     src(['src/img/**/*.ico', 'src/img/**/*.svg'])
         .pipe(dest('dist/img/'))
@@ -61,9 +60,9 @@ function minifyIMG(done) {
 function style() {
   return src('./src/sass/**/*.sass', './src/sass/**/*.scss')
       .pipe(sass())
-      // .pipe(autoprefixer({
-      //   cascade: false
-      // }))
+      .pipe(autoprefixer({
+        cascade: false
+      }))
       .pipe(dest('./src/css'))
       .pipe(browserSync.stream())
 }
