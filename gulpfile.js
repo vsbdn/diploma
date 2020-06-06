@@ -50,7 +50,7 @@ function fonts(done) {
 
 function minifyIMG(done) {
     src('src/img/**/*.{png,jpg,jpeg}')
-        .pipe(tinypng({key: 'rklNQJk2T1QlbSscdMstbRp0NTxWbSKq',}))
+        .pipe(tinypng({key: 'yTqLWYR5pCByFslJMlH4zZXL09Yc6vYr',}))
         .pipe(dest('dist/img/'));
     src(['src/img/**/*.ico', 'src/img/**/*.svg'])
         .pipe(dest('dist/img/'))

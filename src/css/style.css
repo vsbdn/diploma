@@ -313,7 +313,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal; }
 
 img {
@@ -327,6 +327,12 @@ a {
 
 .light {
   color: #FFFFFF; }
+
+.dark {
+  color: #222222; }
+
+.bold {
+  font-weight: 700; }
 
 .col-30 {
   max-width: 30%; }
@@ -352,34 +358,6 @@ div.invalid {
     cursor: pointer;
     z-index: 20; }
 
-@font-face {
-  font-family: 'Istok Web';
-  src: url("../fonts/IstokWeb-Regular.woff2") format("woff2"), url("../fonts/IstokWeb-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Istok Web';
-  src: url("../fonts/IstokWeb-bold.woff2") format("woff2"), url("../fonts/IstokWeb-bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
 .header {
   padding: 8.7rem 11.4rem 0; }
   .header__container {
@@ -394,15 +372,15 @@ div.invalid {
       margin-right: 2.2rem; }
     .header__logo-title {
       font-family: "Istok Web", sans-serif;
-      font-weight: bold;
+      font-weight: 700;
       font-style: normal;
       font-size: 3.6rem;
-      letter-spacing: 0.3px;
+      letter-spacing: normal;
       color: #FFFFFF;
       margin: 0 0 3px 0; }
     .header__logo-subtitle {
       font-family: "Open Sans", sans-serif;
-      font-weight: normal;
+      font-weight: 400;
       font-style: normal;
       color: #dddddd;
       font-size: 1.6rem; }
@@ -415,11 +393,11 @@ div.invalid {
       text-decoration: none;
       color: #dddddd;
       font-family: "Open Sans", sans-serif;
-      font-weight: normal;
+      font-weight: 400;
       font-style: normal;
       font-size: 1.6rem;
       line-height: 1.75;
-      letter-spacing: 0.3px; }
+      letter-spacing: 0.4px; }
       .header__nav-link:not(:last-of-type) {
         margin-right: 5.7rem; }
 
@@ -473,10 +451,10 @@ div.invalid {
 .menu-nav a {
   color: #222222;
   font-family: "Open Sans", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
-  font-size: 1.7rem;
-  line-height: 1.75;
+  font-size: 2.1rem;
+  line-height: 1.3;
   letter-spacing: 0.3px; }
 
 .menu-nav {
@@ -487,7 +465,7 @@ div.invalid {
   border: 1px solid #FFFFFF;
   border-radius: 5px;
   height: 30rem;
-  width: 30rem;
+  width: 28rem;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -500,20 +478,10 @@ div.invalid {
 
 .promo {
   position: relative;
-  background: #FFFFFF url("../img/hero-bg.jpg") no-repeat center/cover;
+  background: url("../img/promo-bg.jpg") no-repeat center/cover;
   width: 100%;
   height: 1001px;
   z-index: 0; }
-  .promo:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #222222;
-    opacity: 0.45;
-    z-index: -1; }
   .promo__content {
     display: flex;
     flex-direction: column;
@@ -521,7 +489,7 @@ div.invalid {
     .promo__content-title {
       max-width: 44.6rem;
       font-family: "Istok Web", sans-serif;
-      font-weight: bold;
+      font-weight: 700;
       font-style: normal;
       font-size: 8.4rem;
       font-stretch: normal;
@@ -533,7 +501,7 @@ div.invalid {
       margin: 0 0 2.2rem 0; }
     .promo__content-subtitle {
       font-family: "Open Sans", sans-serif;
-      font-weight: normal;
+      font-weight: 400;
       font-style: normal;
       max-width: 27.5rem;
       font-size: 2.4rem;
@@ -568,7 +536,7 @@ div.invalid {
   .places__title {
     max-width: 36rem;
     font-family: "Istok Web", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     font-size: 3.6rem;
     font-stretch: normal;
@@ -580,7 +548,7 @@ div.invalid {
     margin-bottom: 0; }
   .places__subtitle {
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-size: 1.3rem;
     font-stretch: normal;
@@ -596,12 +564,12 @@ div.invalid {
     margin-top: 0;
     max-width: 28rem;
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-weight: 600;
     font-style: normal;
     font-size: 2.4rem;
     margin-bottom: 8.8rem;
     line-height: 1.5;
-    letter-spacing: 0.8px; }
+    letter-spacing: 0.2px; }
     .places__description--orange {
       color: #ff6600; }
   .places__all-videos {
@@ -612,7 +580,7 @@ div.invalid {
     font-stretch: normal;
     font-style: normal;
     line-height: 1.75;
-    letter-spacing: 0.7px;
+    letter-spacing: -0.1px;
     color: #000000; }
     .places__all-videos:visited {
       color: #000000; }
@@ -623,7 +591,7 @@ div.invalid {
       margin-left: 1.9rem;
       background: url("../img/camera.svg") no-repeat center; }
   .places__slider {
-    max-width: 69rem;
+    max-width: 690px;
     position: relative; }
   .places .slick-track {
     display: flex; }
@@ -634,10 +602,10 @@ div.invalid {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2.6rem;
-    width: 30.6rem;
-    min-height: 17.2rem;
-    max-height: 17.2rem;
+    margin-bottom: 26px;
+    width: 306px;
+    min-height: 172px;
+    max-height: 172px;
     background: url("../img/swiper-video-2.jpg") no-repeat center; }
     .places .slider-item .image-wrap::before {
       position: absolute;
@@ -652,9 +620,9 @@ div.invalid {
       background: rgba(23, 190, 187, 0.5) no-repeat center/cover; }
   .places .slider-item span {
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
-    font-size: 1.3rem;
+    font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -669,8 +637,8 @@ div.invalid {
     background: #FFFFFF url("../img/arrow-prev.svg") no-repeat center;
     font-size: 0;
     top: 39%;
-    margin-top: -2.7rem;
-    left: -4.3rem;
+    margin-top: -27px;
+    left: -43px;
     width: 12px;
     height: 12px;
     border: 1px solid #FFFFFF;
@@ -681,7 +649,7 @@ div.invalid {
   .places .slick-arrow.slick-next {
     background: #FFFFFF url("../img/arrow-next.svg") no-repeat center;
     font-size: 0;
-    margin-top: -2.7rem;
+    margin-top: -27px;
     top: 39%;
     right: 0;
     width: 12px;
@@ -700,7 +668,7 @@ div.invalid {
     margin: 0 0 1.9rem 0;
     text-align: center;
     font-family: "Istok Web", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     font-size: 3.6rem;
     line-height: 1.33;
@@ -710,10 +678,10 @@ div.invalid {
     text-align: center;
     margin: 0 0 12.64rem 0;
     letter-spacing: 0.5px;
-    font-family: "Istok Web", sans-serif;
-    font-weight: normal;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 1.3rem;
+    font-size: 13px;
     line-height: 1.33;
     color: #777777; }
   .clients__row {
@@ -724,26 +692,26 @@ div.invalid {
     display: flex;
     flex-direction: column; }
   .clients__avatar {
-    width: 7.5rem;
-    height: 9.0rem;
+    width: 75px;
+    height: 90px;
     margin-bottom: 1.7rem; }
   .clients__text {
-    max-width: 20.2rem;
-    padding-left: 2.7rem; }
+    max-width: 202px;
+    padding-left: 27px; }
   .clients__name {
     align-self: flex-start;
     font-family: "Istok Web", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
-    font-size: 1.7rem;
+    font-size: 17px;
     line-height: 1.33;
     letter-spacing: -0.34px;
     color: #222222; }
   .clients__message {
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
-    font-size: 1.3rem;
+    font-size: 13px;
     line-height: 1.85;
     letter-spacing: normal;
     color: #777777; }
@@ -766,7 +734,7 @@ div.invalid {
   .about__heading {
     margin: 0 0 63px 0;
     font-family: "Istok Web", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     font-size: 36px;
     line-height: 1.33;
@@ -775,7 +743,7 @@ div.invalid {
     max-width: 200px; }
   .about__title {
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-size: 24px;
     font-weight: 600;
@@ -785,9 +753,9 @@ div.invalid {
     margin-bottom: 34px; }
   .about__subtitle {
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
-    max-width: 309px;
+    max-width: 310px;
     font-size: 16px;
     line-height: 1.75;
     letter-spacing: 0.24px;
@@ -796,7 +764,7 @@ div.invalid {
     margin-bottom: 19px; }
     .about__subtitle-offer {
       font-family: "Open Sans", sans-serif;
-      font-weight: normal;
+      font-weight: 400;
       font-style: normal;
       font-size: 13px;
       line-height: 1.85;
@@ -853,7 +821,7 @@ div.invalid {
     align-items: center; }
   .about__pagination-num {
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-size: 24px;
     font-weight: 600;
@@ -863,7 +831,7 @@ div.invalid {
     color: #222222; }
   .about__total-num {
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-size: 13px;
     line-height: 1.85;
@@ -887,7 +855,7 @@ div.invalid {
 
 .footer__promo {
   padding: 20.1rem 0 10.8rem 0;
-  background: #222222 url("../img/promo-bg.jpg") no-repeat center/cover; }
+  background: #222222 url("../img/promo-bg-auto.jpg") no-repeat center/cover; }
   .footer__promo-col {
     display: flex;
     flex-direction: column;
@@ -900,7 +868,7 @@ div.invalid {
     max-width: 21.2rem;
     margin-top: 1.8rem;
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-weight: 700;
     font-style: normal;
     font-weight: 700;
     font-size: 1.6rem;
@@ -915,7 +883,7 @@ div.invalid {
     .footer__promo-description--info {
       width: 25rem;
       font-family: "Open Sans", sans-serif;
-      font-weight: normal;
+      font-weight: 400;
       font-style: normal;
       font-size: 1.3rem;
       font-weight: normal;
@@ -932,7 +900,7 @@ div.invalid {
     align-items: center;
     margin-top: 1.8rem;
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-size: 2.4rem;
     font-weight: 600;
@@ -951,7 +919,7 @@ div.invalid {
     margin: 0;
     text-align: left;
     font-family: "Istok Web", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     font-size: 8.4rem;
     font-stretch: normal;
@@ -970,7 +938,7 @@ div.invalid {
       margin-left: 3.8rem; }
       .footer__promo-title-items .first {
         font-family: "Open Sans", sans-serif;
-        font-weight: normal;
+        font-weight: 400;
         font-style: normal;
         font-size: 2.4rem;
         font-weight: 600;
@@ -979,8 +947,8 @@ div.invalid {
         letter-spacing: normal;
         color: #17bebb; }
       .footer__promo-title-items .second {
-        font-family: "Istok Web", sans-serif;
-        font-weight: normal;
+        font-family: 'Istok Web', sans-serif;
+        font-weight: 400;
         font-style: normal;
         font-size: 3.6rem;
         font-weight: normal;
@@ -994,7 +962,7 @@ div.invalid {
     padding-left: 2rem;
     text-align: center;
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-size: 2.4rem;
     font-weight: 500;
@@ -1020,7 +988,7 @@ div.invalid {
 .block-one__title, .block-two__title {
   max-width: 53px;
   font-family: "Open Sans", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-size: 13px;
   font-weight: normal;
@@ -1035,7 +1003,7 @@ div.invalid {
   display: block;
   margin: 37px 0 0 0;
   font-family: "Istok Web", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-size: 36px;
   font-weight: bold;
@@ -1048,7 +1016,7 @@ div.invalid {
     display: block;
     content: '';
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-size: 13px;
     font-weight: normal;
@@ -1092,7 +1060,7 @@ div.invalid {
   position: relative; }
   .footer__form-title {
     font-family: "Istok Web", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     margin: 0;
     max-width: 19.5rem;
@@ -1123,7 +1091,7 @@ div.invalid {
     .footer__form-input::-moz-placeholder {
       padding-top: 1rem;
       font-family: "Open Sans", sans-serif;
-      font-weight: normal;
+      font-weight: 400;
       font-style: normal;
       font-size: 1.6rem;
       letter-spacing: 0.24px;
@@ -1132,7 +1100,7 @@ div.invalid {
     .footer__form-input:-ms-input-placeholder {
       padding-top: 1rem;
       font-family: "Open Sans", sans-serif;
-      font-weight: normal;
+      font-weight: 400;
       font-style: normal;
       font-size: 1.6rem;
       letter-spacing: 0.24px;
@@ -1141,7 +1109,7 @@ div.invalid {
     .footer__form-input::-ms-input-placeholder {
       padding-top: 1rem;
       font-family: "Open Sans", sans-serif;
-      font-weight: normal;
+      font-weight: 400;
       font-style: normal;
       font-size: 1.6rem;
       letter-spacing: 0.24px;
@@ -1150,7 +1118,7 @@ div.invalid {
     .footer__form-input::placeholder {
       padding-top: 1rem;
       font-family: "Open Sans", sans-serif;
-      font-weight: normal;
+      font-weight: 400;
       font-style: normal;
       font-size: 1.6rem;
       letter-spacing: 0.24px;
@@ -1160,7 +1128,7 @@ div.invalid {
     max-height: 5.4rem;
     display: block;
     font-family: "Istok Web", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     padding: 1.3rem 11rem;
     text-transform: uppercase;
@@ -1177,7 +1145,7 @@ div.invalid {
     margin-bottom: 1.8rem; }
   .footer__form-promocode {
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     display: block;
     font-size: 13px;
@@ -1203,7 +1171,7 @@ div.invalid {
 
 .footer__col-title {
   font-family: "Istok Web", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   margin: 0 4rem 0 0;
   font-size: 8.4rem;
@@ -1217,7 +1185,7 @@ div.invalid {
 
 .footer__col-pricetag {
   font-family: "Open Sans", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-size: 24px;
   font-weight: 600;
@@ -1230,7 +1198,7 @@ div.invalid {
 
 .footer__col-oldprice {
   font-family: "Open Sans", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   margin: 0;
   font-size: 2.4rem;
@@ -1269,7 +1237,7 @@ div.invalid {
     color: white; }
     .select-trigger-days {
       font-family: "Open Sans", sans-serif;
-      font-weight: normal;
+      font-weight: 700;
       font-style: normal;
       font-size: 24px;
       font-weight: 600;
@@ -1281,7 +1249,7 @@ div.invalid {
       color: #FFFFFF; }
     .select-trigger-discount {
       font-family: "Open Sans", sans-serif;
-      font-weight: normal;
+      font-weight: 400;
       font-style: normal;
       font-size: 16px;
       font-weight: normal;
@@ -1348,7 +1316,7 @@ div.invalid {
     align-items: center; }
   .contacts__pagination-num {
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-size: 24px;
     font-weight: 600;
@@ -1363,7 +1331,7 @@ div.invalid {
     margin-right: 39px; }
     .contacts__total-num {
       font-family: "Open Sans", sans-serif;
-      font-weight: normal;
+      font-weight: 400;
       font-style: normal;
       font-size: 13px;
       font-weight: normal;
@@ -1401,7 +1369,7 @@ div.invalid {
       background: url("../img/footer-slider-bg.png") no-repeat center; }
       .contacts__col .slider__item-title {
         font-family: "Open Sans", sans-serif;
-        font-weight: normal;
+        font-weight: 400;
         font-style: normal;
         margin-top: 0;
         margin-bottom: 3.1rem;
@@ -1416,7 +1384,7 @@ div.invalid {
         color: #FFFFFF; }
       .contacts__col .slider__item-text {
         font-family: "Open Sans", sans-serif;
-        font-weight: normal;
+        font-weight: 400;
         font-style: normal;
         max-width: 20rem;
         font-size: 13px;
@@ -1457,7 +1425,7 @@ div.invalid {
         overflow: hidden; }
   .contacts__title {
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-weight: 700;
     font-style: normal;
     font-size: 16px;
     font-weight: 600;
@@ -1469,7 +1437,7 @@ div.invalid {
     color: #FFFFFF; }
   .contacts__list, .contacts__link {
     font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     display: block;
     padding-left: 0;
@@ -1500,7 +1468,7 @@ div.invalid {
 
 .rights {
   font-family: "Open Sans", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-size: 13px;
   font-weight: normal;
@@ -1541,18 +1509,18 @@ div.invalid {
       margin-top: 2rem;
       text-align: center;
       font-family: "Open Sans", sans-serif;
-      font-weight: normal;
+      font-weight: 700;
       font-style: normal;
       font-size: 3.6rem; }
     .modal__dialog-subtitle {
       text-align: center;
       font-family: "Open Sans", sans-serif;
-      font-weight: normal;
+      font-weight: 400;
       font-style: normal;
       font-size: 2rem; }
     .modal__dialog-button {
       font-family: "Istok Web", sans-serif;
-      font-weight: bold;
+      font-weight: 700;
       font-style: normal;
       padding: 1.3rem 11rem;
       text-transform: uppercase;
@@ -1567,7 +1535,8 @@ div.invalid {
       color: #FFFFFF;
       background-color: #ff6600;
       margin-bottom: 1.8rem;
-      cursor: pointer; }
+      cursor: pointer;
+      outline: none; }
 
 .visible {
   opacity: 1;
@@ -1582,13 +1551,31 @@ div.invalid {
     max-width: 80.3rem;
     min-height: 40.6rem; }
     .places__video-wrap {
+      margin-bottom: 6rem;
       margin-top: -22.6rem; }
   .places__row {
     flex-wrap: wrap; }
   .places__col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-basis: 100%; }
+    .places__col:first-child {
+      flex-direction: column; }
   .places__slider {
     margin-top: 4rem; }
+  .places .slider-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .places .slick-arrow.slick-next {
+    right: -25px; }
+  .places .slick-arrow.slick-prev {
+    left: -25px; }
+  .places__description {
+    max-width: 80%;
+    margin-bottom: 2rem;
+    text-align: center; }
   .about__col {
     flex-basis: 100%; }
     .about__col-one {
@@ -1672,6 +1659,10 @@ div.invalid {
   div.invalid {
     top: 23rem; } }
 
+@media screen and (max-width: 860px) {
+  .places__slider {
+    max-width: 306px; } }
+
 @media screen and (max-width: 768px) {
   .header__container {
     flex-wrap: wrap;
@@ -1689,24 +1680,27 @@ div.invalid {
       display: none; }
       .header__nav-link:not(:last-child) {
         margin: 0; }
-  .promo__content-title {
-    max-width: 33.3rem;
-    font-size: 6.4rem; }
+  .promo {
+    height: 800px; }
+    .promo__content-title {
+      max-width: 33.3rem;
+      font-size: 6.4rem; }
   .clients {
     padding-top: 5rem; }
   .places {
-    background-color: #FFFFFF;
-    padding-bottom: 1rem; }
+    padding-bottom: 5rem; }
     .places__container {
       max-width: 90%; }
     .places__video-wrap {
+      margin-bottom: 6rem;
       padding: 0 4rem; }
     .places__title {
       font-size: 3rem; }
     .places__subtitle {
       max-width: 20rem; }
-    .places__row {
-      display: none; }
+    .places__description {
+      max-width: 80%;
+      text-align: center; }
   .about {
     padding-top: 5rem;
     padding-bottom: 0; }
@@ -1757,12 +1751,22 @@ div.invalid {
       margin-bottom: 2rem; }
   .places__heading {
     top: -15rem; }
+  .places__slider .slick-arrow.slick-prev {
+    padding: 15px;
+    margin-top: -13.5px; }
+  .places__slider .slick-arrow.slick-next {
+    padding: 15px;
+    margin-top: -13.5px; }
   .clients {
     padding: 5rem 0; }
     .clients__col {
       flex-basis: 100%; }
       .clients__col:nth-of-type(3) {
         margin-bottom: 5rem; }
+    .clients__text {
+      max-width: 380px;
+      text-align: center;
+      padding-left: 0; }
     .clients__subtitle {
       margin-bottom: 5rem; }
   .contacts__col-one {
@@ -1786,6 +1790,16 @@ div.invalid {
     font-size: 7rem; }
   .footer__col-pricetag {
     font-size: 18px; } }
+
+@media screen and (max-width: 375px) {
+  .places__col {
+    max-width: 100%; }
+  .places__slider {
+    max-width: 306px; }
+    .places__slider .slick-arrow.slick-prev {
+      left: 0; }
+    .places__slider .slick-arrow.slick-next {
+      right: 0; } }
 
 @media screen and (min-width: 992px) {
   .menu-nav {
@@ -1823,7 +1837,8 @@ div.invalid {
   .contacts__link {
     transition: all 0.2s; }
     .contacts__link:hover {
-      color: #17bebb; }
+      color: #17bebb;
+      text-decoration: underline; }
   .footer__form-button {
     transition: all 0.2s; }
     .footer__form-button:hover {

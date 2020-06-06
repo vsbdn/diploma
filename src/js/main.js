@@ -12,6 +12,14 @@ $(document).ready(function () {
     $('.places__slider').slick({
         infinite: true,
         slidesToShow: 2,
+        responsive: [
+            {
+                breakpoint: 860,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
     $('.about__slider').slick({
         asNavFor: '.about__current'
